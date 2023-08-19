@@ -1,0 +1,11 @@
+@font-face {
+	font-family: "Karla";
+	src: local("Karla"),
+		url(./fonts/KARLA-VARIABLEFONT_WGHT.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: local("Montserrat"),
+		url(./fonts/MONTSERRAT-BOLD.ttf) format("truetype");
+}

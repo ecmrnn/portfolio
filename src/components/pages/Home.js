@@ -1,12 +1,14 @@
 const Home = () => {
 	return (
-		<div className="grid place-items-center h-screen">
+		<section
+			id="content"
+			className="z-20">
 			<div>
-				<p>hello~</p>
-				<h1>i am ec.</h1>
-				<p>front-end dev.</p>
+				<p className="font-montserrat text-6xl">hello~</p>
+				<h1 className="text-9xl leading-tight">i am ec.</h1>
+				<p className="font-montserrat text-6xl">front-end dev.</p>
 			</div>
-		</div>
+		</section>
 	);
 };
 

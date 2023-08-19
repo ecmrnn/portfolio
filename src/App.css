@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	* {
+		@apply transition-all font-karla;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-montserrat;
+	}
+	section {
+		@apply w-[80%] h-[80%] duration-500 grid place-items-center;
+	}
+}
+
+@layer components {
+	.menu--dots {
+		@apply w-[4px] aspect-square text-white bg-black rounded-full border border-white;
+	}
+}
