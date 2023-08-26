@@ -1,13 +1,17 @@
 import "./App.css";
+// Pages
 import Menu, { Navigation } from "./components/assets/Menu";
 import Home from "./components/pages/Home";
-import Overlay from "./components/assets/Overlay";
-import { Route, Routes } from "react-router-dom";
 import NotFound from "./components/pages/NotFound";
+// Assets
+import Overlay from "./components/assets/Overlay";
+// Packages
+import { Route, Routes } from "react-router-dom";
 
 function App() {
 	return (
 		<main className="grid place-items-center h-screen">
+			{/* main ui */}
 			<Navigation />
 			<Menu />
 			<Overlay />

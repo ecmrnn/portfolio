@@ -95,8 +95,11 @@ export const Navigation = () => {
 		let list = navList;
 		let activeLink = window.location.pathname.slice(1);
 		for (let counter = 0; counter < list.length; counter++) {
-			if (list[counter].link === activeLink) {
+			if (list[counter].link === activeLink || activeLink === "") {
 				setActive(list[counter].id);
+				break;
+			} else if (counter + 1 === list.length) {
+				setActive(-1);
 			}
 		}
 	});
