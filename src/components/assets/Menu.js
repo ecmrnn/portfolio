@@ -30,19 +30,19 @@ const Menu = () => {
 			className="group z-40 w-[50px] aspect-square fixed top-1/2 -translate-y-1/2 left-[50px] bg-black grid place-items-center">
 			<div className="grid gap-[2px]">
 				<div className="flex gap-[2px]">
-					<div className="menu--dots group-hover:bg-white delay-[100ms]"></div>
-					<div className="menu--dots group-hover:bg-white delay-[200ms]"></div>
-					<div className="menu--dots group-hover:bg-white delay-[300ms]"></div>
+					<div className="menu--dots group-hover:border-white delay-[100ms]"></div>
+					<div className="menu--dots group-hover:border-white delay-[200ms]"></div>
+					<div className="menu--dots group-hover:border-white delay-[300ms]"></div>
 				</div>
 				<div className="flex gap-[2px]">
-					<div className="menu--dots group-hover:bg-white delay-[100ms]"></div>
-					<div className="menu--dots group-hover:bg-white delay-[200ms]"></div>
-					<div className="menu--dots group-hover:bg-white delay-[300ms]"></div>
+					<div className="menu--dots group-hover:border-white delay-[100ms]"></div>
+					<div className="menu--dots group-hover:border-white delay-[200ms]"></div>
+					<div className="menu--dots group-hover:border-white delay-[300ms]"></div>
 				</div>
 				<div className="flex gap-[2px]">
-					<div className="menu--dots group-hover:bg-white delay-[100ms]"></div>
-					<div className="menu--dots group-hover:bg-white delay-[200ms]"></div>
-					<div className="menu--dots group-hover:bg-white delay-[300ms]"></div>
+					<div className="menu--dots group-hover:border-white delay-[100ms]"></div>
+					<div className="menu--dots group-hover:border-white delay-[200ms]"></div>
+					<div className="menu--dots group-hover:border-white delay-[300ms]"></div>
 				</div>
 			</div>
 		</button>

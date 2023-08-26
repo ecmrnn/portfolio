@@ -7,10 +7,11 @@ import NotFound from "./components/pages/NotFound";
 import Overlay from "./components/assets/Overlay";
 // Packages
 import { Route, Routes } from "react-router-dom";
+import About from "./components/pages/About";
 
 function App() {
 	return (
-		<main className="grid place-items-center h-screen">
+		<main className="w-screen h-screen grid place-items-center">
 			{/* main ui */}
 			<Navigation />
 			<Menu />
@@ -24,7 +25,7 @@ function App() {
 				/>
 				<Route
 					path="/about"
-					element={<Home />}
+					element={<About />}
 				/>
 				<Route
 					path="/projects"

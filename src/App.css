@@ -4,7 +4,7 @@
 
 @layer base {
 	* {
-		@apply transition-all duration-500 font-karla;
+		@apply transition-all duration-500 font-karla font-bold;
 	}
 	h1,
 	h2,
@@ -15,15 +15,21 @@
 		@apply font-montserrat;
 	}
 	section {
-		@apply w-[70%] h-[70%] duration-500 grid place-items-center;
+		@apply w-[70%] h-[70%] overflow-scroll duration-500 grid place-items-center;
 	}
 }
 
 @layer components {
 	.menu--dots {
-		@apply w-[4px] aspect-square text-white bg-black rounded-full border border-white;
+		@apply w-[4px] aspect-square text-white bg-black rounded-full border border-white/50;
 	}
 	.lines {
 		@apply h-5 opacity-5 bg-black;
+	}
+	.about {
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		row-gap: 5px;
+		column-gap: 20px;
 	}
 }
