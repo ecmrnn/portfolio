@@ -93,6 +93,11 @@ export const Navigation = () => {
 	// eslint-disable-next-line
 	useEffect(() => {
 		let list = navList;
+
+		setTimeout(() => {
+			closeMenu();
+		}, 250);
+
 		let activeLink = window.location.pathname.slice(1);
 		for (let counter = 0; counter < list.length; counter++) {
 			if (list[counter].link === activeLink || activeLink === "") {
@@ -106,7 +111,7 @@ export const Navigation = () => {
 	return (
 		<div
 			id="navigation"
-			className="z-50 -translate-x-full fixed h-screen top-0 left-0 w-[500px] bg-black px-[50px] py-[100px] text-white flex flex-col justify-between">
+			className="z-50 -translate-x-full transition-all duration-500 fixed h-screen top-0 left-0 w-[500px] bg-black px-[50px] py-[100px] text-white flex flex-col justify-between">
 			<div className="flex flex-col gap-[100px]">
 				{/* Navigation Header */}
 				<div className="flex justify-between items-center">

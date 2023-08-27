@@ -1,9 +1,11 @@
+import Emoji from "../assets/Emoji";
+import transition from "../../transition";
 import {
 	FaceOutlined,
 	HistoryEduOutlined,
 	IntegrationInstructionsOutlined,
-	MilitaryTechOutlined,
 	SubdirectoryArrowRightOutlined,
+	VerifiedOutlined,
 } from "@mui/icons-material";
 import { SvgIcon } from "@mui/material";
 
@@ -69,7 +71,7 @@ const About = () => {
 	const certifications = [
 		{
 			id: 9,
-			icon: MilitaryTechOutlined,
+			icon: VerifiedOutlined,
 			header: "certifications",
 			content: [
 				{
@@ -91,7 +93,15 @@ const About = () => {
 				<div className="w-full absolute top-0">
 					{/* header */}
 					<header className="mb-[50px] flex items-center w-full justify-between">
-						<h1 className="text-6xl">about me.</h1>
+						<div>
+							<h1 className="text-6xl">
+								about me.{" "}
+								<Emoji
+									symbol="😀"
+									label="grinning face"
+								/>
+							</h1>
+						</div>
 						<div className="flex gap-5">
 							<div className="lines w-[230px]"></div>
 							<div className="lines w-5"></div>
@@ -131,7 +141,7 @@ const About = () => {
 														}
 														fontSize="small"
 													/>
-													<span className="w-24">
+													<span className="w-24 shrink-0">
 														{label}
 													</span>
 													<span>:</span>
@@ -237,4 +247,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default transition(About);
