@@ -1,13 +1,11 @@
-import { m } from "framer-motion";
-
 const Overlay = () => {
 	return (
 		<>
-			<m.div
+			<div
 				id="overlay"
-				className="fixed w-screen z-10 h-screen bg-black/0 backdrop-blur-0">
+				className="transition-all duration-500 fixed w-screen z-10 h-screen bg-black/0 backdrop-blur-0">
 				{/* Nothing to see here */}
-			</m.div>
+			</div>
 		</>
 	);
 };

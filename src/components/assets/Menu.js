@@ -133,10 +133,10 @@ export const Navigation = () => {
 							key={`${link}-${id}`}
 							to={`/${link === "home" ? "" : link}`}
 							onClick={() => setActive(id)}
-							className={`flex gap-5 items-center ${
+							className={`transition-all duration-500 flex gap-5 items-center ${
 								active === id ? "opacity-50" : ""
 							}`}>
-							<div className="w-[30px] aspect-square grid place-items-center bg-white text-black">
+							<div className="transition-all duration-500 w-[30px] aspect-square grid place-items-center bg-white text-black">
 								<SvgIcon
 									component={icon}
 									fontSize="small"

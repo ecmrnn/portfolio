@@ -1,4 +1,5 @@
 import Emoji from "../assets/Emoji";
+import transition from "../../transition";
 
 const NotFound = () => {
 	const missingLink = window.location.pathname;
@@ -28,4 +29,4 @@ const NotFound = () => {
 	);
 };
 
-export default NotFound;
+export default transition(NotFound);
