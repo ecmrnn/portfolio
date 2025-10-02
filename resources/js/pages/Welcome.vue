@@ -41,14 +41,6 @@ const cards = [
 ];
 </script>
 
-<style scoped>
-#pattern {
-    background-image: url('/public/pattern.png');
-    width: 100%;
-    height: 100%;
-}
-</style>
-
 <template>
     <BaseLayout>
         <div class="absolute inset-0 flex flex-col w-full min-h-full">

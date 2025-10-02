@@ -19,7 +19,7 @@ const sendEmail = () => {
 <template>
     <BaseLayout>
         <div class="absolute inset-0 lg:grid lg:grid-cols-2 w-full min-h-full">
-            <div class="border-b-2 space-y-5 lg:space-y-10 uppercase lg:border-r-2 lg:border-b-0 border-black p-5 lg:p-10 dark:border-white dark:text-white">
+            <div class="border-b-2 dark:bg-[url('/public/svg/pattern-dark.svg')] bg-[url('/public/svg/pattern.svg')] space-y-5 lg:space-y-10 uppercase lg:border-r-2 lg:border-b-0 border-black p-5 lg:p-10 dark:border-white dark:text-white">
                 <h1 class="font-black flex lg:flex-col" style="font-size: 7vw; line-height: 7vw;">
                     <div>Let's&nbsp;</div>
                     <div>Connect</div>
