@@ -47,7 +47,7 @@ const cards = [
             <div class="py-5 lg:py-10 dark:bg-[url('/public/svg/pattern-dark.svg')] bg-[url('/public/svg/pattern.svg')] bg-repeat relative border-b-2 border-black z-20 dark:border-white">
                 <h1 class="font-black text-center uppercase" style="font-size: 7vw; line-height: 7vw;">
                     <span id="name">Ec Maranan</span> <br />
-                    Laravel Developer
+                    Laravel Dev.
                 </h1>
                 <p class="text-center font-bold uppercase mt-5">
                     <span>{{ languages.join(' // ') }}</span>

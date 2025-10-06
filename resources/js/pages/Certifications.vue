@@ -55,7 +55,7 @@ const openCertificate = (id: number) => {
                     <p class="text-sm lg:text-base w-full sm:max-w-1/2 lg:max-w-full xl:max-w-1/2">A bunch of certificates I’ve earned along the way — proof of the things I’ve learned, the skills I’ve picked up, and the goals I’ve hit.</p>
                 </div>
 
-                <div class="p-3 flex gap-3 items-start dark:bg-white/10 bg-black rounded-md border border-black dark:border-white/20 text-white uppercase w-full sm:max-w-1/2 lg:max-w-full xl:max-w-1/2 text-xs">
+                <div class="p-3 flex gap-3 items-start bg-white text-black dark:bg-black rounded-md border border-black/10 dark:border-white/20 dark:text-white uppercase w-full sm:max-w-1/2 lg:max-w-full xl:max-w-1/2 text-xs">
                    <Info class="flex-shrink-0" />
                    <p>you can verify these certificates at <a href="https://www.certiport.com/portal/pages/credentialverification.aspx" target="_blank">verify.certiport.com</a>, sn for js, html and css: <span class="underline underline-offset-2">20220129599</span>, SN for databases: <span class="underline underline-offset-2">202010199</span></p>
                 </div>
@@ -76,8 +76,8 @@ const openCertificate = (id: number) => {
 
                     <Modal :show="activeCertificate === certificate.id" @click.self="activeCertificate = null">
                         <div>
-                            <div class="bg-[url('/public/svg/pattern.svg')] border border-black/10 mb-5 aspect-video w-full">
-                                <img :src="certificate.image" alt="certificate image" class="" />
+                            <div class="bg-[url('/public/svg/pattern.svg')] border border-black/10 mb-5 overflow-hidden rounded-md w-full">
+                                <img :src="certificate.image" alt="certificate image" />
                             </div>
                             <h3 class="font-black text-lg mb-5">{{ certificate.title }}</h3>
                             
